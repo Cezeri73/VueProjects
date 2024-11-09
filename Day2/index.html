@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Vue Day2</title>
+  </head>
+  <body>
+  
+    <header class="head">
+        <h1>The Topics that we Cover for FrontEnd</h1>
+      </header>
+  
+      <section id="frontend">
+        <h2>Road Map</h2>
+  
+      <p>{{firstGoal}}</p>
+      <p> {{SecondGoal}}</p>
+      <p>{{ThirdGoal}}</p>
+      <p>{{LastGoal}}</p>
+      <p>{{ourGoal()}}</p>
+      <p v-html="vHtmlTest"></p>
+
+      <p>{{longTimeGoal()}}</p>
+      
+
+      <h2> About Me</h2>
+      <a v-bind:href='mylinkedin'>My Social Accounts</a>
+      </section>
+
+      
+   
+
+    <script src="script.js" defer></script>
+  </body>
+</html>

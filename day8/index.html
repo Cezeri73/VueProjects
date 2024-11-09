@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 8</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Summer Intern 2 - Day8</h1>
+    </header>
+
+    <section id="frontEnd">
+
+        <h2>TO DO LİST APPLICATION</h2>
+        <div id="inputAdd">
+            <input type="text"  v-model="enteredTask">
+        <button @click="addTask">Ekle</button> 
+        <button @click="removeTask">Sil</button>
+        <button @click="hideOrshow">{{isVisible ? 'Gizle' : 'Göster'}}</button>
+        </div>
+
+        <!-- <p v-if="skills.length===0">Herhangi birşey eklemediniz !</p> -->
+
+
+        <ul  v-if="isVisible">
+           <li v-for="(enteredTask, index) in tasks" :key="index"  >{{index +1}} . Görev : {{enteredTask}} </li>
+        </ul>
+
+        <!-- <p v-else>This is else part of the condition</p> -->
+    </section>
+
+
+    <script src="script.js" defer></script>
+</body>
+</html>

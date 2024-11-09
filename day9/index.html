@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Day 9 - Attack Game</title>
+  </head>
+  <body>
+    <header>
+      <h1>Saldiri Oyunu</h1>
+    </header>
+
+    <div class="frontEnd">
+      <div id="computer" class="container">
+        <h2>Bilgisayar</h2>
+
+        <div class="bar">
+          <div class="barValue">
+            
+          </div>
+          <p class="percentage">100%</p>
+        </div>
+      </div>
+
+      <div id="Me" class="container">
+        <h2>Me</h2>
+
+        <div class="bar">
+          <div class="barValue"></div>
+          <p class="percentage">100%</p>
+        </div>
+      </div>
+
+
+      <div class="container">
+        <h2>Oyun Bitti</h2>
+        <h3>Bilgisayar Kazandı</h3>
+        <h3>Sen Kazandın</h3>
+        <h3> Berabere !</h3>
+        <button>Yeni Oyun</button>
+      </div>
+
+      <div id="controls">
+        <button>Saldir</button>
+        <button :disabled="true">Süper Saldiri</button>
+        <button>Can ver</button> 
+
+        
+      </div>
+
+
+      </div>
+    </div>
+  </body>
+</html>

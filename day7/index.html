@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day7</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>The Way Of the FrontEnd</h1>
+    </header>
+
+    <section id="frontEnd">
+
+        <h2>Baştan Sona</h2>
+        <div id=" inputAdd">
+            <input type="text"  v-model="skill">
+        <button @click="addSkill">Ekle</button> 
+        <button @click="removeSkill">Temizle</button>
+        </div>
+
+        <p v-if="skills.length===0">Herhangi birşey eklemediniz !</p>
+
+
+        <ul   v-else-if="skills.length > 0">
+           <li v-for="(skill,index) in skills"  @click="removeSkill(index)">{{index +1}} . ders : {{skill}} </li>
+        </ul>
+
+        <p v-else>This is else part of the condition</p>
+    </section>
+
+
+    <script src="script.js" defer></script>
+</body>
+</html>

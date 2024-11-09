@@ -1,0 +1,75 @@
+header {
+  text-align: center;
+  background-color: rgb(123, 255, 0);
+  margin: 50px auto;
+  width: 100%;
+  max-width: 700px;
+  padding: 20px;
+  border-radius: 25px;
+  font-size: large;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+section {
+  display: flex;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  background-color: rgb(0, 81, 255);
+  margin: 50px auto;
+  width: 100%;
+  max-width: 700px;
+  padding: 20px;
+  border-radius: 25px;
+  font-size: large;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+section .box {
+  border: 4px dashed rgb(248, 134, 134);
+  margin: 15px;
+  width: 100px;
+  height: 100px;
+  background-color: aqua;
+}
+
+.selecteds {
+  border-color: rgb(19, 23, 255) !important;
+}
+
+#inputAdd {
+  display: flex;
+}
+#inputAdd input{
+   
+  font-size: x-large;
+   width: 200px;
+   font-style: italic;
+   border: double    5px;
+   border-radius: 10px;
+}
+li {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  padding: 15px;
+  color: black;
+  margin: 10px;
+  border: 2px solid rgb(255, 248, 219);
+  font-size: 25px;
+  list-style-type: none;
+  background-color: rgb(35, 236, 176);
+  border-radius: 10px;
+}
+
+#frontEnd button {
+   cursor: pointer;
+   color: aliceblue;
+   background-color: rgb(255, 0, 0);
+   border-radius: 15px;
+   border:  solid 5px;
+  margin-left: 20px;
+}

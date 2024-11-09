@@ -1,0 +1,45 @@
+header {
+    text-align: center;
+    background-color: rgb(123, 255, 0);
+    margin: 50px auto;
+    width: 100%;
+    max-width: 700px;
+    padding: 20px;
+    border-radius: 25px;
+    font-size: large;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+      rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+      rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  }
+
+
+  section {
+    display: flex;
+    color: rgb(74, 34, 250);
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    margin: 50px auto;
+    width: 100%;
+    max-width: 700px;
+    padding: 20px;
+    border-radius: 25px;
+    font-size: large;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;    
+  }
+  
+
+ section .box{
+
+    border: 4px dashed rgb(255, 255, 255);
+    margin: 15px;
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+ }
+
+ .selecteds{
+  border-color: rgb(19, 23, 255) !important;
+ }
+

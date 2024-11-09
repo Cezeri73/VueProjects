@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Day 10 - Attack Game</title>
+  </head>
+  <body>
+    <header>
+      <h1>Saldırı Oyunu</h1>
+    </header>
+
+    <div id="frontEnd" class="frontEnd">
+      <div id="computer" class="container">
+        <h2>Bilgisayar</h2>
+        <div class="bar">
+          <div class="barValue" :style="{width: computerHealth + '%'}"></div>
+          <p class="percentage">{{ computerHealth }}%</p>
+        </div>
+      </div>
+
+      <div id="Me" class="container">
+        <h2>Me</h2>
+        <div class="bar">
+          <div class="barValue" :style="{width: myHealth + '%'}"></div>
+          <p class="percentage">{{ myHealth }}%</p>
+        </div>
+      </div>
+
+      <div class="container" v-if="winner">
+        <h2>Oyun Bitti</h2>
+        <h3 v-if="winner === 'computer'">Bilgisayar Kazandı</h3>
+        <h3 v-if="winner === 'me'">Sen Kazandın</h3>
+        <h3 v-if="winner === 'draw'">Berabere!</h3>
+        <button @click="resetGame()">Yeni Oyun</button>
+      </div>
+
+      <div id="controls" v-else>
+        <button @click="attackToComputer()">Saldır</button>
+        <button @click="superAttackToComputer()" :disabled="superAttackUsed">Süper Saldırı</button>
+        <button @click="healMe()">Can Ver</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

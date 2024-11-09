@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Day5</title>
+  </head>
+  <body>
+    <header>
+      <h2> Adventure of Vue</h2>
+    </header>
+
+    <section id="sectionPart">
+      <h2>Event Binding</h2>
+      <h3>Arttırma ve Azaltma operasyonları</h3>
+      <button @click="add(5)">5 Arttir</button>
+      <button @click="reduce(5)">5 Azalt</button>
+      <p v-once>İnitial Score : {{counter}}</p>
+
+      <p>Result : {{counter}}</p>
+      <input
+        type="text"
+        v-model="name"
+        placeholder="Your Name"
+        aria-label="name"
+      />
+      <input
+        type="text"
+        name=""
+        id=""
+        v-model="lastName"
+        placeholder="your surname "
+        aria-label="surname"
+      />
+      <!-- <input  v-bind:value="name" type="text" v-on:input="setName($event,'KAYNAR')" /> -->
+
+      <p>Adınız : {{fullname}}</p>
+      <button @click="resetScore()">Reset</button>
+
+      <form action="" v-on:submit.prevent="submitForm">
+        <input type="text" />
+        <button>Log in</button>
+      </form>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>

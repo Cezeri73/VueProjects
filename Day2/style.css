@@ -1,0 +1,49 @@
+
+
+header{
+    background-color: aquamarine;
+    width: 100%;
+    max-width: 700px;
+    text-align: center;
+    margin: 50px auto;
+    border: 5px solid;
+    border-radius: 3px;
+    padding: 10px;
+    box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
+}
+
+#frontend{
+    background-color: aquamarine;
+    width: 100%;
+    max-width: 700px;
+    text-align: center;
+    margin: 50px auto;
+    border: 5px solid;
+    border-radius: 3px;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+#frontend p{
+    border-radius: 25px;
+    font-size: 20px;
+    padding: 10px;
+    color: white;
+    background-color: darkmagenta;
+}
+
+#frontend h2{
+    font-size: 30px;
+    border-bottom: 4px solid gray
+}
+#aboutme{
+    background-color: aquamarine;
+    width: 100%;
+    max-width: 700px;
+    text-align: center;
+    margin: 50px auto;
+    border: 5px solid;
+    border-radius: 3px;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}

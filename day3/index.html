@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <link rel="stylesheet" href="style.css">
+    
+    <title> Day3</title>
+
+</head>
+<body>
+    
+    <div id="app">
+        <header>
+            <h1>Information About me </h1>
+        </header>
+
+        <section>
+          
+            <p>{{myName}}</p>
+            <p>{{myAge}}</p>
+            <img v-bind:src="randomPhoto"  alt="not used yet">
+            <br>
+            <input type="text" name="" id="" v-bind:value="myName">
+
+        </section>
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>

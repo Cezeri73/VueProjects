@@ -1,0 +1,82 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+header{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+    background-color: blueviolet
+}
+
+.container{
+    padding: 15px;
+    text-align: center;
+    border-radius: 5px;
+    
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    max-width: 600px;
+    width: 100%;
+    margin: 30px auto;
+}
+
+.bar{
+    
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid gray;
+    height: 40px;
+    margin: 15px 0px;
+}
+.barValue{
+    width: 100%;
+    height: 40px;
+    border: 1px solid rgb(248, 56, 248);
+     border-radius: 20px;
+     
+     background-color: darkmagenta;
+}
+
+.percentage{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+#computer h2, #me h2{
+    margin: 5px;
+}
+
+#controls{
+    text-align: center;
+    
+    color: white;
+}
+
+button{
+    background-color: darkmagenta;
+    color: white;
+    padding: 15px 30px;
+    width: 200px;
+    font-size: 18px;
+    border: none;
+    margin: 15px;
+    cursor: pointer;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    border-radius: 15px; 
+    transition: all 0.3s linear ;
+
+}
+
+button:hover{
+    background-color: darkorange;
+}
+
+button:disabled{
+    background-color: gray;
+    cursor: not-allowed;
+    box-shadow: none;
+}

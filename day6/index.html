@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <title>Day6</title>
+</head>
+<body>  
+    <header>
+        <input type="text"  name="" id="" placeholder="lütfen rengi seçiniz : ">
+        <h1 >Adım Adım Vue.js ile FrontEnd</h1>
+        <p  :style="{color:renk1}">frontend</p>
+    </header>
+
+    <section id="frontEnd"> 
+        <h2>Dynamic Styling</h2>
+        <div class="box"  :class="boxOneSelected"  @click="chooseBox('1')" ></div>
+        <div   :class="['box',{selecteds:secondBox}]"  @click="chooseBox('2')"></div>
+        <div class="box"  :class="{selecteds:thirdBox}"   @click="chooseBox('3')" ></div>
+    </section>
+
+    <script src="script.js"></script
+</body>
+</html>
